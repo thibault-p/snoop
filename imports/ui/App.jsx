@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 
-// import Rooms from './Rooms.jsx';
+import RoomsList from './RoomsList.jsx';
 import AppBar from './AppBar.jsx';
 
 
 export default class App extends Component {
 
-
   render() {
     return  (
-      <div className="container-fluid">
+      <div>
         <AppBar />
+        <div className="container">
+          <RoomsList />
+        </div>
       </div>
     );
   }
