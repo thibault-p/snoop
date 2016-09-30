@@ -2,14 +2,56 @@ body{
   background-color: #dedede;
 }
 
-.rooms-list .entry{
+textarea {
+  resize: none;
+}
+
+.rooms-list .entry, .room-detail .entry {
   box-shadow: 2px 2px 2px #888888;
   background-color: white;
   padding: 1.5em;
+  padding-top:0em;
+  text-decoration: none;
+  color: #333;
+}
+
+.rooms-list .entry.nothing{
+  color: #b7b7b7;
+  padding-top: 5em;
+  padding-bottom: 6em;
+}
+
+.rooms-list .entry.new-room{
+  margin-bottom: 3em;
+  border-top: #cecbcb 0.2em dashed;
+  background-color: #fafafa;
+}
+
+.rooms-list .entry.hoverable {
   transition: background-color 0.3s;
   -webkit-transition: background-color 0.3s;
 }
 
-.rooms-list .entry:hover {
-  background-color: #ececec;
+.rooms-list .entry.hoverable:hover {
+  background-color: #f0f0f0;
+}
+
+
+.rooms-list .entry .description {
+  padding-left: 1em;
+  font-style: italic;
+}
+
+.rooms-list .entry.control {
+  padding-top: 2em;
+}
+
+.room-detail .header {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.room-detail .header small {
+  padding-left: 1em;
+  font-style: italic;
 }

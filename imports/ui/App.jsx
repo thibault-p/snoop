@@ -1,8 +1,9 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 
-import RoomsList from './RoomsList.jsx';
-import AppBar from './AppBar.jsx';
+import RoomsList from './RoomsList.jsx'
+import AppBar from './AppBar.jsx'
 
 
 export default class App extends Component {
@@ -12,7 +13,7 @@ export default class App extends Component {
       <div>
         <AppBar />
         <div className="container">
-          <RoomsList />
+          {this.props.content}
         </div>
       </div>
     );
